@@ -18,7 +18,26 @@
              id="scene"
              embedded
              gesture-detector>
-        
+
+        <a-anchor>
+            <a-sphere position="0 0 0" color ="white" radius="0.15">
+                <a-animation
+                    attribute="color"
+                    dur="10000"
+                    from="white"
+                    to="green"
+                    repeat="indefinite"></a-animation>
+            </a-sphere>
+
+        </a-anchor>
+
+        <!--<a-marker type="barcode" value="8">
+            <a-sphere id="sphere"
+                      position="0 0 0" 
+                      color ="white"
+                      scale="0.018390502966511827 0.018390502966511827 0.10"></a-sphere>
+        </a-marker>-->
+
         <a-entity camera></a-entity>
     </a-scene>
 </body>
